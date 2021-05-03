@@ -11,9 +11,9 @@
 
 <!-- iterate through each post -->
 {#each posts as post}
-  <article>
+  <article id="posts">
     <!-- link article to /posts/$permalink -->
-    <a href={`/posts/${post.permalink}`}>
+    <a rel:prefetched href={`/posts/${post.permalink}`}>
       <h2>{post.title}</h2>
     </a>
   </article>
